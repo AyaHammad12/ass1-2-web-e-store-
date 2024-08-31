@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Customer Registration</title>
+    </head>
+    <body>
+            <header>
+                <h1>Welcome to Koton Style :)  <img src="./Screenshot.png" alt="logo" width="50" height="60"></h1>
+                <hr>
+                <nav>
+                <ul>
+                        <li><a href="./../../index.html">Personal page</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./product1.html">Products</a>  </li>
+                        <li><a href="./contact.html">Contact Us</a>  </li>
+                        <li><a href="./registration.html">Register</a>  </li>
+                </ul>
+                </nav>
+                
+            </header>
+
+        
+        <h2>Customer Registration Form</h2>
+        <br>
+        <form action="http://comp334.studentswebprojects.ritaj.ps/util/process.php" method="post">
+            <fieldset>
+                <legend>personal Information</legend>
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <br>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>  
+                <br>
+                <div>
+                    <label for="lastName">Last Name:</label>
+                    <br>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>  
+                <br>
+                <div> 
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                </div> 
+                <br>
+                <div>  
+                    <label for="Phone">Phone:</label>
+                    <br>
+                    <input type="tel" id="Phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Formate: 123-456-789" required>
+                </div>  
+            </fieldset>
+
+            <br>
+            <br>
+            <fieldset>
+
+                <legend>Address</legend>
+                <div>
+                    <label for="address">Address:</label>
+                    <br>
+                    <textarea  id="address" name="address" required  style="width: 550px; height: 80px;"></textarea>
+                </div>  
+                <br>
+                <div>
+                    <label for="city">City:</label>
+                    <br>
+                    <input type="text" id="city" name="city" required>
+                </div>  
+                <br>
+                <div> 
+                    <label for="postalCode">Postal Code:</label>
+                    <br>
+                    <input type="text" id="postalCode" name="postalCode" required pattern="[A-Z][0-9]{4}" placeholder="like P8654">
+        
+                </div> 
+                <br>
+                <div>  
+                    <label for="country">Country:</label>
+                    <br>
+                    <select id="country" name="country" required>
+                        <option value="">Select Country</option>
+                        <option value="PAL">Palestine</option>
+                        <option value="SAU">Saudi Arabia</option>
+                        <option value="EGY">Egypt</option>
+                        <option value="USA">United States</option>
+                        <option value="CAN">Canada</option>
+                        <option value="UK">United Kingdom</option>
+                    </select> 
+                </div>   
+                <br>
+            <br>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>   
+            </fieldset>
+        </form>
+        
+        <footer>
+            <hr>
+            <ul>
+                <li>Last Update: April 5, 2024</li>
+                <li>Store Address: 123 Ramallah Street, Ramallah, Palestine</li>
+                <li>Customer Support: Phone: +0598527811 | Email: <a href="mailto:ayahhammad2003@gmail.com">Koton_Style@gmail.com</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li> &copy; 2024 Koton Style. All rights reserved.</li>
+            </ul>   
+        </footer>
+    </body>
+</html>
